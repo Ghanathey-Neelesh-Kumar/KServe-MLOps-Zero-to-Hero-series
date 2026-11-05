@@ -13,6 +13,6 @@
 ## Platform components
 - [cert-manager documentation](https://cert-manager.io/docs/)
 - [Envoy Gateway documentation](https://gateway.envoyproxy.io/)
-- [Gateway API documentation](https://gateway-api.sigs.k8s.io/
+- [Gateway API documentation](https://gateway-api.sigs.k8s.io/)
 
 Prefer documentation matching the versions used in your environment.
