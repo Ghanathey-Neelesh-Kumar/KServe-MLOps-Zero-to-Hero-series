@@ -1,17 +1,15 @@
-# Step 4 — Install and configure Envoy Gateway
+# Gateway and networking in this installation
 
-Envoy Gateway provides the gateway layer used in this local walkthrough to expose the inference service.
-
-## Verify the controller
+This episode deliberately keeps the initial installation focused on KServe Standard mode. It sets:
 
 ```bash
-kubectl get pods -A
-kubectl get gatewayclass
-kubectl get gateway -A
+--set kserve.controller.gateway.disableIngressCreation=true
 ```
 
-Confirm the Envoy Gateway controller is ready, then apply the Gateway configuration demonstrated in the video.
+This tells KServe not to create ingress resources as part of this setup.
 
-If GatewayClass is missing, check that the controller installed successfully, inspect its logs, and confirm that the required Gateway API resources are present.
+The episode explains that KServe recommends the Kubernetes Gateway API for networking, but using it requires a gateway controller. Gateway networking will be covered in later networking-focused videos.
 
-Documentation: https://gateway.envoyproxy.io/
+For the current installation walkthrough, the plan is to access the model using `kubectl port-forward`.
+
+This folder is reserved for the gateway configuration and practical steps when that part of the series is covered. Do not install an additional gateway solely on the basis of this episode's script.
