@@ -1,6 +1,6 @@
 # Video 05 — Deploy ML Models from Private S3 Storage with KServe and MinIO
 
-**YouTube video:** To be added after publication.
+**YouTube video:** https://youtu.be/NhKq1bVzYxE
 
 In this episode, we configure KServe to download a model from **private S3-compatible object storage**. We run MinIO locally inside Kubernetes, train and upload a Scikit-learn Iris model, configure storage credentials, and deploy the model through a KServe `InferenceService`.
 
