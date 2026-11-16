@@ -1,0 +1,12 @@
+apiVersion: "serving.kserve.io/v1beta1"
+kind: "InferenceService"
+metadata:
+  name: "sklearn-iris-s3"
+  namespace: kserve-test
+spec:
+  predictor:
+    serviceAccountName: sa
+    model:
+      modelFormat:
+        name: sklearn
+      storageUri: "s3://models/iris/"
